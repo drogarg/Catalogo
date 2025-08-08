@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tienda Natural</title>
+  <link rel="shortcut icon" href="../img/i1.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="../index.html" class="back-arrow">←</a>
+    <img src="../img/logo.jpg" alt="Logo" class="logo" />
+  </header>
+
+  <div class="pedido-bar">
+    Tus productos naturales.
+  </div>
+  <div class="descuento-bar">TODA LA WEB 10% OFF</div>
+
+  <!-- BOTÓN FLOTANTE para abrir carrito -->
+  <button id="boton-carrito-wsp" title="Ver pedido">
+    <span id="contador-carrito">0</span>
+    <img src="../img/carrito.png" style="filter: invert(1);" alt="Carrito" />
+  </button>
+
+  <!-- SIDEBAR DEL CARRITO -->
+  <div id="carrito-sidebar">
+    <h2>Tu pedido</h2>
+    
+    <!-- Contenedor con scroll para la lista -->
+    <div id="carrito-productos-container">
+      <div id="lista-carrito"></div>
+    </div>
+
+    <!-- Footer fijo con total y botón -->
+    <div id="carrito-footer">
+      <p id="total">Total: $0</p>
+      <button id="enviar-pedido">Enviar Pedido</button>
+    </div>
+  </div>
+
+  <div id="datos-cliente-modal" class="modal-datos-cliente">
+    <div class="modal-contenido">
+      <h3>Datos para el envío</h3>
+
+      <label for="nombre-cliente">Nombre:</label>
+      <input type="text" id="nombre-cliente" placeholder="Su nombre" />
+
+      <label for="ciudad-cliente">Ciudad:</label>
+      <input type="text" id="ciudad-cliente" placeholder="Su ciudad" />
+
+      <label for="calle-cliente">Calle:</label>
+      <input type="text" id="calle-cliente" placeholder="Su calle" />
+
+      <label for="direccion-cliente">Altura:</label>
+      <input type="text" id="direccion-cliente" placeholder="Su dirección" />
+
+      <div style="margin-top:10px; text-align:right;">
+        <button id="confirmar-datos">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fondo oscuro para datos cliente -->
+  <div id="fondo-oscuro-datos"></div>
+
+  <!-- FONDO OSCURO -->
+  <div id="fondo-oscuro"></div>
+
+  <main class="productos">
+    <div class="producto" id="mateco1" data-marca="Y">
+      <img src="../imgd/mco1.webp" alt="" />
+      <p>TROPICAL COCO YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco2" data-marca="Y">
+      <img src="../imgd/mco2.webp" alt="" />
+      <p>GINGER MATE YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco3" data-marca="Y">
+      <img src="../imgd/mco3.webp" alt="" />
+      <p>FLOWER POWER YERBA COMPUESTA LATA X 220 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco4" data-marca="Y">
+      <img src="../imgd/mco4.webp" alt="" />
+      <p>LEMON YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco5" data-marca="Y">
+      <img src="../imgd/mco5.webp" alt="" />
+      <p>TRES MENTAS YERBA COMPUESTA LATA X 220 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco6" data-marca="Y">
+      <img src="../imgd/mco6.webp" alt="" />
+      <p>MATE CHAI YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco7" data-marca="Y">
+      <img src="../imgd/mco7.webp" alt="" />
+      <p>VERY FRESH YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco8" data-marca="Y">
+      <img src="../imgd/mco8.webp" alt="" />
+      <p>SPICY CHOCO YERBA COMPUESTA LATA X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco9" data-marca="Y">
+      <img src="../imgd/mco9.webp" alt="" />
+      <p>TROPICAL COCO YERBA COMPUESTA RESPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco10" data-marca="Y">
+      <img src="../imgd/mco10.webp" alt="" />
+      <p>GINGER MATE YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco11" data-marca="Y">
+      <img src="../imgd/mco11.webp" alt="" />
+      <p>FLOWER POWER YERBA COMPUESTA REPUESTO X 220 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco12" data-marca="Y">
+      <img src="../imgd/mco12.webp" alt="" />
+      <p>LEMON YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco13" data-marca="Y">
+      <img src="../imgd/mco13.webp" alt="" />
+      <p>TRES MENTAS YERBA COMPUESTA REPUESTO X 220 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco14" data-marca="Y">
+      <img src="../imgd/mco14.webp" alt="" />
+      <p>MATE CHAI YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco15" data-marca="Y">
+      <img src="../imgd/mco15.webp" alt="" />
+      <p>VERY FRESH YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco16" data-marca="Y">
+      <img src="../imgd/mco16.webp" alt="" />
+      <p>SPICY CHOCO YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco17" data-marca="Y">
+      <img src="../imgd/mco17.webp" alt="" />
+      <p>CURCUMA LOVE YERBA COMPUESTA REPUESTO X 250 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco18" data-marca="T">
+      <img src="../imgd/mco18.webp" alt="" />
+      <p>RED LOVE TOPPING DOYPACK X 90 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco19" data-marca="T">
+      <img src="../imgd/mco19.webp" alt="" />
+      <p>SWEET LEMON TOPPING DOYPACK X 55 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco20" data-marca="T">
+      <img src="../imgd/mco20.webp" alt="" />
+      <p>CALMA TOPPING DOYPACK X 45 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco21" data-marca="T">
+      <img src="../imgd/mco21.webp" alt="" />
+      <p>GINGER MINT TOPPING DOYPACK X 75 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco22" data-marca="T">
+      <img src="../imgd/mco22.webp" alt="" />
+      <p>COCOA TOPPING DOYPACK X 90 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco23" data-marca="T">
+      <img src="../imgd/mco23.webp" alt="" />
+      <p>VANILLA CHAI TOPPING DOYPACK X 90 G MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco24" data-marca="K">
+      <img src="../imgd/mco24.webp" alt="" />
+      <p>MATE DE CERÁMICA COLORES</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco25" data-marca="K">
+      <img src="../imgd/mco25.webp" alt="" />
+      <p>KIT MATE AZUL CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco26" data-marca="K">
+      <img src="../imgd/mco26.webp" alt="" />
+      <p>KIT MATE BLANCO CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco27" data-marca="K">
+      <img src="../imgd/mco27.webp" alt="" />
+      <p>KIT MATE VERDE CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco28" data-marca="K">
+      <img src="../imgd/mco28.webp" alt="" />
+      <p>KIT MATE CELESTE CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco29" data-marca="K">
+      <img src="../imgd/mco29.webp" alt="" />
+      <p>KIT MATE NEGRO CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco30" data-marca="K">
+      <img src="../imgd/mco30.webp" alt="" />
+      <p>KIT MATE AMARILLO CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+    <div class="producto" id="mateco31" data-marca="K">
+      <img src="../imgd/mco31.webp" alt="" />
+      <p>KIT MATE ROSA CON BOMBILLA + YERBA MATE A ELECCION MATE & CO</p>
+      <p class="precio">$</p>
+      <button class="agregar-btn">Agregar al pedido</button>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      
+      <div class="imagen-fija">
+        <img id="modal-img" src="" alt="Producto" />
+      </div>
+
+      <div class="contenido-scroll">
+        <h2 id="modal-title">Título</h2>
+        <p id="modal-price" class="precio">Precio</p>
+        <p id="modal-info">Descripción del producto...</p>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-final">
+      <a class="footer-link" href="https://ivannksv.github.io/DisenadorWebIK/">
+        &copy; Diseño: <span class="footer-nombre">IK</span>. Todos los derechos reservados.
+      </a>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/productos/mateco.js"></script>
+
+</body>
+</html>
