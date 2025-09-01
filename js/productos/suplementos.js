@@ -431,4 +431,14 @@ const productosSuplementos = [
     categoria: "suplementos",
     marca: "COMPRIMIDOSN"
     },
+    {
+    id: "suplementos49",
+    nombre: "MACA EN CAPSULAS X 30",
+    precio: "$",
+    descripcion: "Descubrí el poder ancestral de la Maca peruana, una raíz adaptógena cultivada en los Andes que ha sido utilizada durante siglos por sus propiedades revitalizantes. Este suplemento natural está diseñado para acompañarte en tu día a día, potenciando cuerpo y mente con una fórmula pura y efectiva. Beneficios clave: 🔋 Energía sostenida: Ideal para combatir la fatiga física y mental sin recurrir a estimulantes artificiales. 💪 Resistencia y rendimiento: Apoya la vitalidad general, especialmente útil para quienes practican deporte o enfrentan jornadas intensas. ❤️ Equilibrio hormonal: Contribuye a regular el sistema endocrino, siendo un aliado durante el síndrome premenstrual y la menopausia. 🔥 Aumento de la libido: Reconocida por su efecto afrodisíaco natural, mejora el deseo sexual en hombres y mujeres. 👶 Fertilidad: Estudios sugieren que puede favorecer la salud reproductiva. 🧘‍♂️ Bienestar emocional: Ayuda a reducir el estrés y la ansiedad gracias a sus propiedades adaptógenas. 🧠 Claridad mental: Favorece la concentración y el enfoque.Modo de uso: Tomar 1 a 2 cápsulas al día, preferentemente por la mañana o antes de actividades que requieran energía y enfoque.",
+    imagen: "../img/com26.webp",
+    categoria: "suplementos",
+    marca: "COMPRIMIDOSN"
+    },
+
 ]
